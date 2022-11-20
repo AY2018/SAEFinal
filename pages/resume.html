@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/media.css">
+	<link rel="stylesheet" href="../css/animation.css">
+	<script src="https://kit.fontawesome.com/b4ff4a2621.js" crossorigin="anonymous"></script>
+	
+	
+	<title>Ayoub | Resume</title>
+</head>
+<body class="resumeBody">
+
+	<!-- Contact Box -->
+	<section class="box_container" id="contactForm">
+		<div class="boxContact">
+			<!-- Exit button -->
+			<button class="exitBtn" onclick="removeClass(); removeBlurry();"><i class="fa-solid fa-x"></i></button>
+	
+			<!-- Form -->
+			<form target="_blank" action="../form.php" method="POST" class="contactForm">
+				<h2>Send me a message ! <i class="fa-solid fa-hand-wave"></i></h2>
+				<!-- Name Input -->
+				<div class="inputBox">
+					<input type="text" required="required" name="name">
+					<span>Name</span>
+					<i></i>
+				</div>
+	
+				<!-- Email Input -->
+				<div class="inputBox">
+					<input type="email" required="required" name="email">
+					<span>Email</span>
+					<i></i>
+				</div>
+	
+				<!-- Message Input -->
+				<div class="inputBox">
+					<textarea class="formMessage" required="required" name="message"></textarea>
+					<span>Message</span>
+					<i></i>
+				</div>
+	
+				<!-- Submit Input -->
+				<input class="formBtn" type="submit" value="Send" onclick="removeClass(); removeBlurry();">
+			</form>
+		</div>
+	</section>
+
+
+	<!-- HEADER -->
+	<header id="topOfThePage" class="headerResume">
+		<div class="mainHeader">
+			<div class="logo">
+				<h1>AYOUB KAHFY</h1>
+			</div>
+			<nav id="navBar">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li class="active"><a class="current" href="./resume.html">Resume</a></li>
+					<li><a href="./works.html">Works</a></li>
+					<li><a href="./career.html">Career</a></li>
+					<li><a class="getInTouchBtn" onclick="addClass(); blurry();" href="#">GET IN TOUCH</a></li>
+					<li class="menuLinkSocials">
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+					</li>
+				</ul>
+			</nav>
+			<!-- 
+											In the part below "socials", I want to divide it into 2 parts: 
+											- At the top, the background color change and language
+											- At the bottom, social media and linkss
+										-->
+			<div class="socials">
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+			</div>
+		
+			<div class="getInTouch">
+				<a class="getInTouchBtn" onclick="addClass(); blurry();" href="#">GET IN TOUCH</a>
+				<a class="getInTouchBtn" onclick="addClass(); blurry();" href="#"><i class="fa-solid fa-envelope"></i></a>
+				<i onclick="smallToBig()" class="fa-solid fa-bars" id="hamburger"></i>
+				<i class="fa-solid fa-xmark" id="exitMark" onclick="bigToSmall()"></i>
+			</div>
+		</div>
+	</header>
+
+	<!-- MAIN -->
+	<main class="main_Resume">
+		
+		<div class="main_container container">
+			<!-- Resume -->
+			<section class="resume">
+				<h2 class="ResumeTitleNone">Resume</h2>
+				<!-- Resume : Texte -->
+				<article class="resume_texte">
+					<!-- Resume : Title -->
+					<div class="resume_title">
+						<div class="title_picture">
+							<img src="../img/profile.png" alt="Picture of me smiling (kind of)">
+						</div>
+						<div class="title_texte">
+							<h2>Front-End Developer in the making</h2>
+							<p>Front-End Developer in the making, I have a few months of experience working with
+								HTML/CSS, JavaScript and built a good amount of websites for friends and family.
+								<br> <br> Really passionate about programming in general, and more specifically front-end
+								development,
+								I never stop when getting stuck and keep searching relentlessly for a solution to finish my
+								project.
+							</p>
+						</div>
+		
+					</div>
+					<!-- Resume : Different Sections -->
+					<div class="resume_sections">
+						<!-- Left Section (Info/Skills/Languages) -->
+						<div class="left_column">
+		
+							<!-- Peronsal Info -->
+							<div class="small_section_resume">
+								<h2><i class="fa-solid fa-user"></i> Personal Info</h2>
+								<h3>Address</h3>
+								<p>125 Avenue François Molé <br>Antony, 92160</p>
+								<h3>Phone</h3>
+								<p>+33 7 65 75 68 92</p>
+								<h3>E-mail</h3>
+								<p>ayoub.kahfy@gmail.com</p>
+							</div>
+		
+							<!-- Skills -->
+							<div class="small_section_resume">
+								<h2><i class="fa-solid fa-puzzle-piece"></i> Skills</h2>
+								<ul>
+									<li>Html/CSS</li>
+									<li>Sass</li>
+									<li>Javascript</li>
+									<li>SEO</li>
+									<li>PhP Form</li>
+								</ul>
+							</div>
+		
+							<!-- Languages -->
+							<div class="small_section_resume languagesSection">
+								<h2><i class="fa-solid fa-flag"></i> Languages</h2>
+								<ul>
+									<li>French (Native Language)</li>
+									<li>Moroccan (Native Language)</li>
+									<li>English (Fluent) <p>Lived 2 years in the UK as a student at Warwick University</p> <p>Score of 98 at the TOEFL</p></li>
+									<li>Spanish (Can understand it in writing / lvl B2)</li>
+								</ul>
+							</div>
+						</div>
+		
+						<!-- Right Section (Experience/Education/Certifcates) -->
+						<div class="right_column">
+							<!-- Experinence -->
+							<div class="small_section_resume experience">
+								<h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+		
+								<h3>Built a website for a restaurant</h3>
+								<a target="_blank" rel="noopener noreferrer"
+									href="https://ay2018.github.io/OpenClassrrom_P3/">https://ay2018.github.io/OpenClassrrom_P3/</a>
+								<h4>Key Qualifications</h4>
+								<ul>
+									<li>Built the website based on a brief provided following strict requirements (HTML/CSS/Sass)</li>
+									<li>Worked on the design to make it responsive on all devices (CSS)</li>
+									<li>Added animations (Sass/CSS)</li>
+								</ul>
+		
+								<h3>Built a website for a dancing coach</h3>
+								<a target="_blank" rel="noopener noreferrer"
+									href="https://almaryan.eu/">https://almaryan.eu/</a>
+								<h4>Key Qualifications</h4>
+								<ul>
+									<li>Built the website based on an existing model. I had to make some changes to the original version according to the client's requests (HTML/CSS)</li>
+									<li>Worked on the design to make it responsive on all devices (JavaScript/CSS)</li>
+									<li>Collaborated with another person to build it (GitHub)</li>
+								</ul>
+		
+								<h3>Modified a website to improve its ranking on Google</h3>
+								<a target="_blank" rel="noopener noreferrer"
+									href="https://ay2018.github.io/Projet4/">https://ay2018.github.io/Projet4/</a>
+								<h4>Key Qualifications</h4>
+								<ul>
+									<li>Made an audit of the website (SEO/Accessibility)</li>
+									<li>Rearanged the html file to improve the website's SEO and avoid getting dark flagged by
+										Google (SEO/Html)</li>
+									<li>Worked on the design and colors of the website in order to improve its accessibility
+										(Accessibility/CSS)</li>
+								</ul>
+		
+								<a class="linkMoreWorks" href="./PAGES/websites.html"> See more of my works</a>
+							</div>
+		
+							<!-- Education -->
+							<div class="small_section_resume education">
+								<h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+								<h3>Majoring in Web Development - BA at University of Paris Saclay (graduating in 2025)</h3>
+								<p>Modules studied (and skills learned)</p>
+								<ul>
+									<li>Graphic Design : Photoshop (learnt to create video game backgrounds and edit images)</li>
+									<li>Web Development : Html, Css, JavaScript, PhP to build websites</li>
+									<li>Communication : Learnt how to communicate with my website's visitors</li>
+									<li>Digital Culture : Learnt more about AI and its future impact on the world and the workplace</li>
+									<li>Law & Economy : Learnt about the impact of digitalisation on the economy and the laws governing it</li>
+								</ul>
+								<p class="courserwork">Relevant Coursework</p>
+								<ul>
+									<li>Built my personal website</li>
+									<li>Created the background for a video game on PhotoShop</li>
+									<li>Did the audit of a website</li>
+									<li>Made a documentary on AI built on interview of professionals taken by us (students)</li>
+								</ul>
+							</div>
+		
+							<!-- Certificates -->
+							<div class="small_section_resume certifcates">
+								<h2><i class="fa-solid fa-award"></i> Certificates</h2>
+								<ul>
+									<li><a href="https://openclassrooms.com/fr/paths/717-developpeur-web" target="_blank">
+										<img src="../img/3-removebg-preview.png" alt="image of OpenClassroom's Logo">
+										<p>Web Dev Formation / OpenClassroom (in-progress)</p>
+									</a></li>
+									<li><a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0" target="_blank">
+										<img src="../img/1-removebg-preview.png" alt="image of Harvard's Logo">
+										<p>C50/Introduction to Computer Science / Harvard (in-progress)</p>
+									</a></li>
+									<li><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/" target="_blank">
+										<img src="../img/4-removebg-preview.png" alt="image of Udemy's Logo">
+										<p>Complete Bootcamp - become a Developer / Udemy (in-progress)</p>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+		</div>
+
+		<!-- Arrow BTN -->
+		<a class="arrowUp" href="#topOfThePage" id="arrowUp">
+			<i class="fa-solid fa-arrow-up"></i>
+		</a>
+	</main>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer_container">
+			<ul>
+				<li><a href="../index.html">2022 &#169; Ayoub Kahfy</a></li>
+				<li><a href="#" onclick="addClass(); blurry();">Contact</a></li>
+				<li><a href="mailto:ayoub.kahfy@gmail.com" target="_blank">ayoub.kahfy@gmail.com</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="../script.js"></script>
+</body>
+</html>

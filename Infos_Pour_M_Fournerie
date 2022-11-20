@@ -1,0 +1,25 @@
+career.html
+//Image clickable
+//Vidéo mp4
+
+header > "Get in touch"
+//Formulaire
+
+index.html
+//Vidéo YouTube
+//Loader avec animation en 3d
+
+css
+//Variables en haut de la page css main
+//Animations dans le fichier animation.css
+//Utilisation de flexbox un peu partout
+
+works.html
+//Grid (en version pc seulement)
+//Slider modifé (style et structures changées comparé au slider initial, d'où l'utilisation de !important pour ignorer le styling de base)
+//Animation 3d
+
+------- Site responsif -------
+media queries en bas de la page main.css
+
+Commentaires présents dans les fichiers html et css pour les structurer et faciliter la navigation

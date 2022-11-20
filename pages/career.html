@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/media.css">
+	<link rel="stylesheet" href="../css/animation.css">
+	<script src="https://kit.fontawesome.com/b4ff4a2621.js" crossorigin="anonymous"></script>
+	
+	
+	<title>Ayoub | Career</title>
+</head>
+<body>
+
+	<!-- Contact Box -->
+	<section class="box_container" id="contactForm">
+		<div class="boxContact">
+			<!-- Exit button -->
+			<button class="exitBtn" onclick="removeClass(); removeBlurry();"><i class="fa-solid fa-x"></i></button>
+	
+			<!-- Form -->
+			<form target="_blank" action="../form.php" method="POST" class="contactForm">
+				<h2>Send me a message ! &#128075;</h2>
+				<!-- Name Input -->
+				<div class="inputBox">
+					<input type="text" required="required" name="name">
+					<span>Name</span>
+					<i></i>
+				</div>
+	
+				<!-- Email Input -->
+				<div class="inputBox">
+					<input type="email" required="required" name="email">
+					<span>Email</span>
+					<i></i>
+				</div>
+	
+				<!-- Message Input -->
+				<div class="inputBox">
+					<textarea class="formMessage" required="required" name="message"></textarea>
+					<span>Message</span>
+					<i></i>
+				</div>
+	
+				<!-- Submit Input -->
+				<input class="formBtn" type="submit" value="Send" onclick="removeClass(); removeBlurry();">
+			</form>
+		</div>
+	</section>
+
+
+	<!-- HEADER -->
+	<header id="topOfThePage">
+		<div class="mainHeader">
+			<div class="logo">
+				<h1>AYOUB KAHFY</h1>
+			</div>
+			<nav id="navBar">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="./resume.html">Resume</a></li>
+					<li><a href="./works.html">Works</a></li>
+					<li class="active"><a class="current" href="./career.html">Career</a></li>
+					<li><a class="getInTouchBtn" onclick="addClass(); blurry();" href="#">GET IN TOUCH</a></li>
+					<li class="menuLinkSocials">
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+					</li>
+				</ul>
+			</nav>
+			<!-- 
+									In the part below "socials", I want to divide it into 2 parts: 
+									- At the top, the background color change and language
+									- At the bottom, social media and linkss
+								-->
+			<div class="socials">
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+			</div>
+		
+			<div class="getInTouch">
+				<a class="getInTouchBtn" onclick="addClass(); blurry();" href="#">GET IN TOUCH</a>
+				<a class="getInTouchBtn" onclick="addClass(); blurry();" href="#"><i class="fa-solid fa-envelope"></i></a>
+				<i onclick="smallToBig()" class="fa-solid fa-bars" id="hamburger"></i>
+				<i class="fa-solid fa-xmark" id="exitMark" onclick="bigToSmall()"></i>
+			</div>
+		</div>
+		<div class="headerCareer" id="headerToScroll">
+			<ul>
+				<li><a href="#frontEnd">Front End</a></li>
+				<li><a href="#backEnd">Back End</a></li>
+				<li><a href="#fullStack">Full Stack</a></li>
+				<li><a href="#webDesign">Web Designer</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- MAIN -->
+	<main class="mainFixed">
+		<div class="container_career">
+			<h1>Jobs I would like to do when I graduate</h1>
+			<section class="career_section">
+				<!-- Career - Sections -->
+				<div class="career_section_text">
+					<div class="anchor" id="frontEnd">
+					</div>
+					<h2>1. Front end web Developer</h2>
+					<h3>Skills needed</h3>
+					<ul>
+						<li>Html</li>
+						<li>CSS</li>
+						<li>CSS Frameworks/Libraries (Bootstrap, Tailwind CSS, Sass)</li>
+						<li>JavaScript</li>
+						<li>JavaScript libraries and frameworks (React, Vue)</li>
+						<li>Databases (SQL, MySQL)</li>
+					</ul>
+					<p>
+						Front End Development relates to everything the user can see and interact with. For example, everything on this web site
+						from the logo, the menu, to the images, videos, animations and layout of the page are managed by the front end
+						developer, or in this case, me. To summarize, the front end developer is in charge of the look and feel of the website,
+						on top of making sure that it looks good on all devices (phone, tablet, laptop).
+					</p>
+					<p class="myOpinion">
+						I have loved building legos ever since I was young and I felt the same satisfaction I got finishing a lego when I built
+						my first website in HTML and CSS. Ever since then, it became a hobby of mine to just build websites in my free time.
+						Thus it would be incredible if I could make it my job one day to build websites to help other people grow their
+						business.
+					</p>
+				</div>
+				<div class="career_section_image">
+					<map name="imageMap">
+						<area shape="rect" coords="0,163,599,583" href="https://github.com/" alt="upper part of the image"
+							target="_blank">
+						<area shape="rect" coords="0,0,599,120" href="https://github.com/AY2018/SAE105/blob/main/index.html"
+							alt="lower part of the image" target="_blank">
+					</map>
+					<img src="../img/website.png" alt="image of this website's main page" usemap="#imageMap">
+					<button>Click on the top part of the image to see the HTML code <br><br> Click on the bottom part of the
+						image to see the CSS code</button>
+				</div>
+	
+				<!-- Career - Sections -->
+				<div class="career_section_text">
+					<div class="anchor" id="backEnd">
+						<hr>
+					</div>
+					<h2>2. Back end web Developer</h2>
+					<h3>Skills needed</h3>
+					<ul>
+						<li>Python</li>
+						<li>(or) Java</li>
+						<li>(or) Node</li>
+						<li>(or) PHP</li>
+					</ul>
+					<p>
+						Back End Development refers to the "behind the scenes of the website", the part of the application that the user does
+						not see. Back end developers focus on the logic of the site, creating servers, and working with databases and APIs
+						(Application Programming Interfaces). 
+						<br> <br>
+						For example, the content and layout of the form in this page's footer is visible on the client side, but when the users
+						submit their information it gets processed on the server side.
+					</p>
+					<p class="myOpinion">
+						I haven't started learning any of the back end languages yet, but I'm looking forward to working on a more "technical"
+						aspect of web development. I have been good at maths since young and do generally well when it comes to logic so this
+						might be an interesting job for me.
+					</p>
+				</div>
+				<div class="career_section_image">
+					<video autoplay muted loop controls>
+						<source src="../img/videoDemo.mp4" type="video/mp4">
+						Your browser does not support HTML video.
+					</video>
+				</div>
+	
+				<!-- Career - Sections -->
+				<div class="career_section_text">
+					<div class="anchor" id="fullStack"><hr></div>
+					<h2>3. Full stack Engineer</h2>
+					<h3>Skills needed</h3>
+					<ul>
+						<li>All of the skills mentioned above</li>
+					</ul>
+					<p>
+						A Full Stack Developer is someone who works on both the front and back end of a web application. Working on both sides,
+						he must have a good mastery of all the languages used whether in front end or back end. A Full Stack Developer also
+						needs good problem solving skills as well as good debugging skills.
+					</p>
+					<p class="myOpinion">
+						Full Stack Development looks like a good option further down my path as a Web Developer. I don't know for now if I will
+						start as a Front end or Back end developer, but full stack development, being the combination of both, is an interesting
+						career choice a few years after I start working.
+					</p>
+				</div>
+	
+				<!-- Career - Sections -->
+				<div class="career_section_text">
+					<div class="anchor" id="webDesign"><hr></div>
+					<h2>4. Web Designer</h2>
+					<h3>Skills needed</h3>
+					<ul>
+						<li>Html</li>
+						<li>CSS</li>
+						<li>CSS Frameworks/Libraries (Bootstrap, Tailwind CSS, Sass)</li>
+						<li>JavaScript</li>
+						<li>Figma</li>
+						<li>Photoshop</li>
+					</ul>
+					<p>
+						If a Front End Developer is responsible for building a website, then the Web Designer is responsible for designing the
+						layout, visual appearance and the usability of a website. A good web designer needs to have both the technical skills
+						(to propose the right design and not something that the programmer can't build) and the graphic skills.
+						
+						<br><br>
+	
+						A Web designer needs to be able to visualize how the web application will look like and how it will function (the code
+						behind it).
+					</p>
+					<p class="myOpinion">
+						I have now built a good amount of websites and I quite enjoyed thinking about how to structure them, how to choose the
+						best colors to stay aligned with the brand's message and how to rearrange the elements depending on the device. Web
+						Designer is therefore a possible alternative to my three preferred jobs that are more "programming oriented".
+					</p>
+				</div>
+			</section>
+		</div>
+		<a class="arrowUp" href="#topOfThePage" id="arrowUp">
+			<i class="fa-solid fa-arrow-up"></i>
+		</a>
+	</main>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer_container">
+			<ul>
+				<li><a href="../index.html">2022 &#169; Ayoub Kahfy</a></li>
+				<li><a href="#" onclick="addClass(); blurry();">Contact</a></li>
+				<li><a href="mailto:ayoub.kahfy@gmail.com" target="_blank">ayoub.kahfy@gmail.com</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="../script.js"></script>
+</body>
+</html>

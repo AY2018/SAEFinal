@@ -1,0 +1,119 @@
+/* HEADER */
+
+/* Faire grandir et rétrécir l'icone de contact (en version mobile) Check for animation in "CSS Main" > header .getInTouch a:nth-child(2) */
+
+@keyframes contactIcon {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+/* TOUTES LES PAGES : CONTACT FORM */
+
+/* Faire tourner le premier carré derrière la forme (pour avoir l'effet des borders qui bougent. Check for animation in "CSS Main" > .boxContact::before*/
+
+@keyframes contactRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Faire tourner le deuxième carré derrière la forme (pour avoir l'effet des borders qui bougent. Check for animation in "CSS Main" > .boxContact::after */
+
+@keyframes contactRotate2 {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(540deg);
+    }
+}
+
+
+
+/* PAGE WORKS */
+
+/* Faire tourner la flèche dans le lien vers le site du projet indéfiniement. Check for animation in "CSS Main" > .work_titleOfWork .img i*/
+
+@keyframes arrowRotate {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(360deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+
+/* MENU ANIMATION */
+
+/* Animation menu en version moins 768px */
+
+/* Couleur en background qui se déroule vers la droite puis revient. Check for animation in "CSS Main" > .header nav li:nth-child(1)::before */
+@keyframes spanMovingColor {
+    0% {
+        width: 0%;
+    }
+
+    33% {
+        width: 100%;
+    }
+
+    66% {
+        width: 0%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+/* Couleur qui part et reste si on est sur la page indiquée. Check for animation in "CSS Main" >  header nav .active::after */
+@keyframes spanMovingColorActive {
+    0% {
+        width: 0%;
+    }
+
+    33% {
+        width: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* Lien qui apparaissent quand le background passe dessus. Check for animation in "CSS Main" > header nav li:nth-child(1) a */
+@keyframes linkAppear {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
