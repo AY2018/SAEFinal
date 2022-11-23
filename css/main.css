@@ -118,12 +118,6 @@ img {
     width: 1em;
     height: 1em;
     border-radius: 50%;
-    background: #C6F162;
-    background-image: radial-gradient(circle at top,
-            #fff,
-            #C6F162,
-            #000);
-
     position: absolute;
     bottom: 1em;
     left: -0.5em;
@@ -131,6 +125,11 @@ img {
     animation:
         ballBounce var(--bounceSpeed) infinite ease-out,
         sceneRotate var(--rotateSpeed) infinite linear reverse;
+}
+
+.ball img{
+    filter: invert(70%);
+    animation: sceneRotate 0.01s infinite reverse;
 }
 
 .loader .top .shadow {
