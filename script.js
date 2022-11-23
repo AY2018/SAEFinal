@@ -48,6 +48,13 @@ window.addEventListener("scroll", function(){
 })
 
 
+// Skip animation of loader
+
+function skipAnimation() {
+  let = document.getElementById("loader")
+  loader.classList.add("loaderDisapear");
+}
+
 // Make the background blurry
 
 function blurry() {

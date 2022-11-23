@@ -1,6 +1,6 @@
 /* HEADER */
 
-/* Faire grandir et rétrécir l'icone de contact (en version mobile) Check for animation in "CSS Main" > header .getInTouch a:nth-child(2) */
+    /* Faire grandir et rétrécir l'icone de contact (en version mobile) Check for animation in "CSS Main" */
 
 @keyframes contactIcon {
     0% {
@@ -17,10 +17,9 @@
 }
 
 
-
 /* TOUTES LES PAGES : CONTACT FORM */
 
-/* Faire tourner le premier carré derrière la forme (pour avoir l'effet des borders qui bougent. Check for animation in "CSS Main" > .boxContact::before*/
+    /* Faire tourner le premier carré derrière la forme (pour avoir l'effet des borders qui bougent. */
 
 @keyframes contactRotate {
     0% {
@@ -32,7 +31,7 @@
     }
 }
 
-/* Faire tourner le deuxième carré derrière la forme (pour avoir l'effet des borders qui bougent. Check for animation in "CSS Main" > .boxContact::after */
+    /* Faire tourner le deuxième carré derrière la forme (pour avoir l'effet des borders qui bougent. */
 
 @keyframes contactRotate2 {
     0% {
@@ -45,31 +44,12 @@
 }
 
 
+/* TOUTES LES PAGES : MENU ANIMATION */
 
-/* PAGE WORKS */
+/* Animation menu en version moins 768px (voir partie responsive en bas du fichier main.css */
 
-/* Faire tourner la flèche dans le lien vers le site du projet indéfiniement. Check for animation in "CSS Main" > .work_titleOfWork .img i*/
+    /* Couleur en background qui se déroule vers la droite puis revient. */
 
-@keyframes arrowRotate {
-    0% {
-        transform: rotateX(0deg);
-    }
-
-    50% {
-        transform: rotateX(360deg);
-    }
-
-    100% {
-        transform: rotateX(0deg);
-    }
-}
-
-
-/* MENU ANIMATION */
-
-/* Animation menu en version moins 768px */
-
-/* Couleur en background qui se déroule vers la droite puis revient. Check for animation in "CSS Main" > .header nav li:nth-child(1)::before */
 @keyframes spanMovingColor {
     0% {
         width: 0%;
@@ -88,7 +68,7 @@
     }
 }
 
-/* Couleur qui part et reste si on est sur la page indiquée. Check for animation in "CSS Main" >  header nav .active::after */
+    /* Couleur qui part et reste si on est sur la page indiquée. Check for animation in "CSS Main" */
 @keyframes spanMovingColorActive {
     0% {
         width: 0%;
@@ -103,7 +83,7 @@
     }
 }
 
-/* Lien qui apparaissent quand le background passe dessus. Check for animation in "CSS Main" > header nav li:nth-child(1) a */
+    /* Lien qui apparaissent quand le background passe dessus. Check for animation in "CSS Main" > header nav li:nth-child(1) a */
 @keyframes linkAppear {
     0% {
         opacity: 0;
@@ -116,4 +96,543 @@
     100% {
         opacity: 1;
     }
+}
+
+/* Pages > Works */
+
+    /* Faire tourner la flèche dans le lien vers le site du projet indéfiniement. */
+
+@keyframes arrowRotate {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(360deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+    /* Faire tourner le cube indéfiniement sauf si on hover dessus sur pc ou si on reste appuyer dessus sur mobile et tablette */
+
+@keyframes cubeRotate {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+
+
+/* Page > Home */
+
+/* Loader animation : le cube et la balle */
+
+    /* Faire tourner la scène pour avoir une perspective */
+@keyframes sceneRotate {
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+    /* Faire disparraitre le loader au bout de 6s (ou immédiatement si on clique sur le skip bouton */
+@keyframes sceneDisapear {
+    0% {
+        opacity: 1;
+        z-index: 99999999999999;
+        perspective: 10em;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -99999999999999;
+        display: none;
+        perspective: 100em;
+    }
+}
+
+    /* Faire bondire la balle indéfiniement */
+@keyframes ballBounce {
+
+    0%,
+    100% {
+        bottom: .5em;
+    }
+
+    50% {
+        bottom: 3em;
+        animation-timing-function: ease-in;
+    }
+}
+
+    /* Faire grandir et rétrécir la taille de l'ombre de la balle  */
+
+@keyframes ballShadow {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.8);
+        animation-timing-function: ease-in;
+    }
+}
+
+    /* Modifier la taille du cube pour créer l'image d'une boite qui se déforme et se reforme au contact avec la balle */
+
+@keyframes boxMovingUpandDown {
+
+    0%,
+    100% {
+        height: 1.5em;
+    }
+
+    6.5%,
+    95% {
+        height: 2em;
+    }
+}
+
+/* Loader animation : countdown */
+
+    /* Faire apparaître les nombres puis les faire disparaitre */
+@keyframes appear {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+    /* Les faire apparartre les uns après les autres */
+
+.numbers p:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.numbers p:nth-child(2) {
+    animation-delay: 0.06s;
+}
+
+.numbers p:nth-child(3) {
+    animation-delay: calc(0.06s * 2);
+}
+
+.numbers p:nth-child(4) {
+    animation-delay: calc(0.06s * 3);
+}
+
+.numbers p:nth-child(5) {
+    animation-delay: calc(0.06s * 4);
+}
+
+.numbers p:nth-child(6) {
+    animation-delay: calc(0.06s * 5);
+}
+
+.numbers p:nth-child(7) {
+    animation-delay: calc(0.06s * 6);
+}
+
+.numbers p:nth-child(8) {
+    animation-delay: calc(0.06s * 7);
+}
+
+.numbers p:nth-child(9) {
+    animation-delay: calc(0.06s * 8);
+}
+
+.numbers p:nth-child(10) {
+    animation-delay: calc(0.06s * 9);
+}
+
+.numbers p:nth-child(11) {
+    animation-delay: calc(0.06s * 10);
+}
+
+.numbers p:nth-child(12) {
+    animation-delay: calc(0.06s * 11);
+}
+
+.numbers p:nth-child(13) {
+    animation-delay: calc(0.06s * 12);
+}
+
+.numbers p:nth-child(14) {
+    animation-delay: calc(0.06s * 13);
+}
+
+.numbers p:nth-child(15) {
+    animation-delay: calc(0.06s * 14);
+}
+
+.numbers p:nth-child(16) {
+    animation-delay: calc(0.06s * 15);
+}
+
+.numbers p:nth-child(17) {
+    animation-delay: calc(0.06s * 16);
+}
+
+.numbers p:nth-child(18) {
+    animation-delay: calc(0.06s * 17);
+}
+
+.numbers p:nth-child(19) {
+    animation-delay: calc(0.06s * 18);
+}
+
+.numbers p:nth-child(20) {
+    animation-delay: calc(0.06s * 19);
+}
+
+.numbers p:nth-child(21) {
+    animation-delay: calc(0.06s * 20);
+}
+
+.numbers p:nth-child(22) {
+    animation-delay: calc(0.06s * 21);
+}
+
+.numbers p:nth-child(23) {
+    animation-delay: calc(0.06s * 22);
+}
+
+.numbers p:nth-child(24) {
+    animation-delay: calc(0.06s * 23);
+}
+
+.numbers p:nth-child(25) {
+    animation-delay: calc(0.06s * 24);
+}
+
+.numbers p:nth-child(26) {
+    animation-delay: calc(0.06s * 25);
+}
+
+.numbers p:nth-child(27) {
+    animation-delay: calc(0.06s * 26);
+}
+
+.numbers p:nth-child(28) {
+    animation-delay: calc(0.06s * 27);
+}
+
+.numbers p:nth-child(29) {
+    animation-delay: calc(0.06s * 28);
+}
+
+.numbers p:nth-child(30) {
+    animation-delay: calc(0.06s * 29);
+}
+
+.numbers p:nth-child(31) {
+    animation-delay: calc(0.06s * 30);
+}
+
+.numbers p:nth-child(32) {
+    animation-delay: calc(0.06s * 31);
+}
+
+.numbers p:nth-child(33) {
+    animation-delay: calc(0.06s * 32);
+}
+
+.numbers p:nth-child(34) {
+    animation-delay: calc(0.06s * 33);
+}
+
+.numbers p:nth-child(35) {
+    animation-delay: calc(0.06s * 34);
+}
+
+.numbers p:nth-child(36) {
+    animation-delay: calc(0.06s * 35);
+}
+
+.numbers p:nth-child(37) {
+    animation-delay: calc(0.06s * 36);
+}
+
+.numbers p:nth-child(38) {
+    animation-delay: calc(0.06s * 37);
+}
+
+.numbers p:nth-child(39) {
+    animation-delay: calc(0.06s * 38);
+}
+
+.numbers p:nth-child(40) {
+    animation-delay: calc(0.06s * 39);
+}
+
+.numbers p:nth-child(41) {
+    animation-delay: calc(0.06s * 40);
+}
+
+.numbers p:nth-child(42) {
+    animation-delay: calc(0.06s * 41);
+}
+
+.numbers p:nth-child(43) {
+    animation-delay: calc(0.06s * 42);
+}
+
+.numbers p:nth-child(44) {
+    animation-delay: calc(0.06s * 43);
+}
+
+.numbers p:nth-child(45) {
+    animation-delay: calc(0.06s * 44);
+}
+
+.numbers p:nth-child(46) {
+    animation-delay: calc(0.06s * 45);
+}
+
+.numbers p:nth-child(47) {
+    animation-delay: calc(0.06s * 46);
+}
+
+.numbers p:nth-child(48) {
+    animation-delay: calc(0.06s * 47);
+}
+
+.numbers p:nth-child(49) {
+    animation-delay: calc(0.06s * 48);
+}
+
+.numbers p:nth-child(50) {
+    animation-delay: calc(0.06s * 49);
+}
+
+
+.numbers p:nth-child(51) {
+    animation-delay: calc(0.06s * 50);
+}
+
+.numbers p:nth-child(52) {
+    animation-delay: calc(0.06s * 51);
+}
+
+.numbers p:nth-child(53) {
+    animation-delay: calc(0.06s * 52);
+}
+
+.numbers p:nth-child(54) {
+    animation-delay: calc(0.06s * 53);
+}
+
+.numbers p:nth-child(55) {
+    animation-delay: calc(0.06s * 54);
+}
+
+.numbers p:nth-child(56) {
+    animation-delay: calc(0.06s * 55);
+}
+
+.numbers p:nth-child(57) {
+    animation-delay: calc(0.06s * 56);
+}
+
+.numbers p:nth-child(58) {
+    animation-delay: calc(0.06s * 57);
+}
+
+.numbers p:nth-child(59) {
+    animation-delay: calc(0.06s * 58);
+}
+
+.numbers p:nth-child(60) {
+    animation-delay: calc(0.06s * 59);
+}
+
+.numbers p:nth-child(61) {
+    animation-delay: calc(0.06s * 60);
+}
+
+.numbers p:nth-child(62) {
+    animation-delay: calc(0.06s * 61);
+}
+
+.numbers p:nth-child(63) {
+    animation-delay: calc(0.06s * 62);
+}
+
+.numbers p:nth-child(64) {
+    animation-delay: calc(0.06s * 63);
+}
+
+.numbers p:nth-child(65) {
+    animation-delay: calc(0.06s * 64);
+}
+
+.numbers p:nth-child(66) {
+    animation-delay: calc(0.06s * 65);
+}
+
+.numbers p:nth-child(67) {
+    animation-delay: calc(0.06s * 66);
+}
+
+.numbers p:nth-child(68) {
+    animation-delay: calc(0.06s * 67);
+}
+
+.numbers p:nth-child(69) {
+    animation-delay: calc(0.06s * 68);
+}
+
+.numbers p:nth-child(70) {
+    animation-delay: calc(0.06s * 69);
+}
+
+.numbers p:nth-child(71) {
+    animation-delay: calc(0.06s * 70);
+}
+
+.numbers p:nth-child(72) {
+    animation-delay: calc(0.06s * 71);
+}
+
+.numbers p:nth-child(73) {
+    animation-delay: calc(0.06s * 72);
+}
+
+.numbers p:nth-child(74) {
+    animation-delay: calc(0.06s * 73);
+}
+
+.numbers p:nth-child(75) {
+    animation-delay: calc(0.06s * 74);
+}
+
+.numbers p:nth-child(76) {
+    animation-delay: calc(0.06s * 75);
+}
+
+.numbers p:nth-child(77) {
+    animation-delay: calc(0.06s * 76);
+}
+
+.numbers p:nth-child(78) {
+    animation-delay: calc(0.06s * 77);
+}
+
+.numbers p:nth-child(79) {
+    animation-delay: calc(0.06s * 78);
+}
+
+.numbers p:nth-child(80) {
+    animation-delay: calc(0.06s * 79);
+}
+
+.numbers p:nth-child(81) {
+    animation-delay: calc(0.06s * 80);
+}
+
+.numbers p:nth-child(82) {
+    animation-delay: calc(0.06s * 81);
+}
+
+.numbers p:nth-child(83) {
+    animation-delay: calc(0.06s * 82);
+}
+
+.numbers p:nth-child(84) {
+    animation-delay: calc(0.06s * 83);
+}
+
+.numbers p:nth-child(85) {
+    animation-delay: calc(0.06s * 84);
+}
+
+.numbers p:nth-child(86) {
+    animation-delay: calc(0.06s * 85);
+}
+
+.numbers p:nth-child(87) {
+    animation-delay: calc(0.06s * 86);
+}
+
+.numbers p:nth-child(88) {
+    animation-delay: calc(0.06s * 87);
+}
+
+.numbers p:nth-child(89) {
+    animation-delay: calc(0.06s * 88);
+}
+
+.numbers p:nth-child(90) {
+    animation-delay: calc(0.06s * 89);
+}
+
+.numbers p:nth-child(91) {
+    animation-delay: calc(0.06s * 90);
+}
+
+.numbers p:nth-child(92) {
+    animation-delay: calc(0.06s * 91);
+}
+
+.numbers p:nth-child(93) {
+    animation-delay: calc(0.06s * 92);
+}
+
+.numbers p:nth-child(94) {
+    animation-delay: calc(0.06s * 93);
+}
+
+.numbers p:nth-child(95) {
+    animation-delay: calc(0.06s * 94);
+}
+
+.numbers p:nth-child(96) {
+    animation-delay: calc(0.06s * 95);
+}
+
+.numbers p:nth-child(97) {
+    animation-delay: calc(0.06s * 96);
+}
+
+.numbers p:nth-child(98) {
+    animation-delay: calc(0.06s * 97);
+}
+
+.numbers p:nth-child(99) {
+    animation-delay: calc(0.06s * 98);
+}
+
+.numbers p:nth-child(100) {
+    animation-delay: calc(0.06s * 99);
+}
+
+    /* Animation pour laisser le dernier nombre au lieu qu'il disparaisse */
+
+@keyframes lastAppear {
+    0% {
+        opacity: 0;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+    }
+}
+
+.numbers p:nth-child(101) {
+    animation: lastAppear 0.06s forwards;
+    animation-delay: calc(0.06s * 100);
 }
